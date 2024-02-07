@@ -7,21 +7,6 @@ const jwt = require("jsonwebtoken");
 
 app.use(express.json());
 
-const posts = [
-  {
-    username: "Emmar",
-    title: "Emracabe",
-  },
-  {
-    username: "Angel Bianca",
-    title: "ABEN",
-  },
-];
-
-app.get("/posts", authenticateToken, (req, res) => {
-  res.json(posts.filter((post) => post.username === req.user.name));
-});
-
 app.post("/login", (req, res) => {
   // Authenticate User
   const username = req.body.username;
