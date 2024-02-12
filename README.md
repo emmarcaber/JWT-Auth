@@ -60,6 +60,5 @@ npm run dev
 This will start the data server using *nodemon*, and it will be available at http://localhost:4000. The data server provides a protected endpoint that requires a valid JWT for access.
 
 ### Practice
-1. Register a user using the authentication server.
-2. Log in to receive a JWT.
-3. Use the received JWT to access the protected data endpoint on the data server.
+1. Log in to receive a JWT.
+2. Use the received JWT to access the protected data endpoint on the data server.
