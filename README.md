@@ -39,3 +39,22 @@ cp .env.example .env
 ACCESS_TOKEN_SECRET = yourSecretToken
 REFRESH_TOKEN_SECRET = yourAnotherSecretToken
 ```
+
+## Usage
+### Running the Authentication Server
+To start the authentication server in development mode, run the following command:
+
+```bash
+npm run devAuth
+```
+
+This will start the authentication server using *nodemon*, which automatically restarts the server on file changes. The server will be available at http://localhost:3000.
+
+### Running the Data Server
+To start the data server in development mode, run the following command:
+
+```bash
+npm run dev
+```
+
+This will start the data server using *nodemon*, and it will be available at http://localhost:4000. The data server provides a protected endpoint that requires a valid JWT for access.
