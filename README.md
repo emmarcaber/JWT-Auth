@@ -21,8 +21,21 @@ git clone https://github.com/emmarcaber/JWT-Auth.git
 cd JWT-Auth
 ```
 
-3. Install the dependencies
+3. Install the dependencies:
    
 ```bash
 npm install
+```
+
+4. In the project directory, copy the .env.example and rename it to .env:
+
+```bash
+cp .env.example .env
+```
+
+5. Replace _SECRET_ACCESS_TOKEN_ and _REFRESH_ACCESS_TOKEN_ with a strong and secure secret key for signing JWTs.
+
+```
+   SECRET_ACCESS_TOKEN = yourSecretToken
+   REFRESH_ACCESS_TOKEN = yourAnotherSecretToken
 ```
